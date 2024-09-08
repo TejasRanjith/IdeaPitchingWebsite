@@ -95,7 +95,7 @@
 </head>
 <body>
     <video autoplay muted loop class="background-video">
-        <source src="{{}}" type="video/mp4">
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
     <div class="container">
@@ -132,7 +132,7 @@
 
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date().getTime() + 10000; // 10 seconds from now
+        var countDownDate = new Date().getTime() + 20000; // 10 seconds from now
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -156,7 +156,7 @@
             document.getElementById("seconds").innerHTML = seconds;
 
             // If the count down is over, write some text 
-            if (distance < 0) {
+            if (distance < 3) {
                 clearInterval(x);
                 document.getElementById("registerButton").innerHTML = '<i class="fas fa-ban"></i> Applications closed';
                 document.getElementById("registerButton").classList.add('closed');
